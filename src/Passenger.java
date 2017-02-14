@@ -16,7 +16,7 @@ public class Passenger
 
     /**
      * Creates a new passanger given by his or hers forename, lastname, and an
-     * email address.
+     * email address. hello
      *
      * @param foreName The forename of the passenger
      * @param lastName The lastname of the passenger.

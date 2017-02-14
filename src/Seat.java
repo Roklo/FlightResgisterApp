@@ -18,7 +18,7 @@ public class Seat
 
     /**
      * Creates a new seat object given by the letter and row number, and sets
-     * the seat to be available.
+     * the seat to be available. hallo
      *
      * @param seatRow The seat row number.
      * @param seatLetter The seat letter (column).
