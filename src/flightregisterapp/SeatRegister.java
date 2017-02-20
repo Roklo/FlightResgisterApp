@@ -1,4 +1,4 @@
-package flyreservasjonssystem;
+package flightregisterapp;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -19,8 +19,8 @@ public class SeatRegister
     private final ArrayList<Seat> seats;
 
     /**
-     * Constructor for objects of class SeatRegister
-     *test
+     * Constructor for objects of class SeatRegister test
+     *
      * @param numberOfRows The number of rows to be created, max 25.
      * @param numberOfLetters The number of letters (columns) to be created, max
      * 25.
