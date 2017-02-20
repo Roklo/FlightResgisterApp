@@ -12,6 +12,10 @@ package flightregisterapp;
 public class FlightRegisterAppMain {
     
     //hei på deg
+<<<<<<< HEAD
     //håkon sin branch
+=======
+    //terst
+>>>>>>> origin/Robin_brach
     
 }
