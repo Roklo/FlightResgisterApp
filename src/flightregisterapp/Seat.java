@@ -1,5 +1,9 @@
 package flightregisterapp;
+<<<<<<< HEAD
 //test robin
+=======
+//test håkon
+>>>>>>> 60a2db41613a59d9282fec5dde37aa223eee2db5
 
 /**
  * The Seat class represents a seat in a flight reservation system. It holds the
