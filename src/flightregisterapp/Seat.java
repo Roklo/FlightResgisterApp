@@ -1,16 +1,12 @@
 package flightregisterapp;
 
-//test robin
-//test håkon
-//ny test asdasdasdasdasdasdas
-
 /**
  * The Seat class represents a seat in a flight reservation system. It holds the
  * seat details relevant in our context, such as the seat row, letter (column)
  * and if the seat is available (status). You also have the possibility to
  * change the status of the seat.
  *
- * @author Håkon Haram, Robin Thorholm, Bjørnar Tenfjord, Erlend Knudsen
+ * @author Håkon Haram, Robin Thorholm, Bjørnar Tennfjord, Erlend Knudsen
  * @version 1.0 (14.02.2017)
  */
 public class Seat
@@ -22,7 +18,7 @@ public class Seat
 
     /**
      * Creates a new seat object given by the letter and row number, and sets
-     * the seat to be available. hallo
+     * the seat to be available. 
      *
      * @param seatRow The seat row number.
      * @param seatLetter The seat letter (column).

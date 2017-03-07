@@ -10,7 +10,7 @@ import java.util.Iterator;
  * the possibility to add, remove and search for seats, as well as getting the
  * number, or a list of the available/unavailable seats.
  *
- * @author Håkon Haram, Robin Thorholm, Bjørnar Tenfjord, Erlend Knudsen
+ * @author Håkon Haram, Robin Thorholm, Bjørnar Tennfjord, Erlend Knudsen
  * @version 1.0 (14.02.2017)
  */
 public class SeatRegister

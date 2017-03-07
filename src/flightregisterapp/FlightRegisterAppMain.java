@@ -9,13 +9,14 @@ package flightregisterapp;
  *
  * @author rocio
  */
-public class FlightRegisterAppMain {
+public class FlightRegisterAppMain 
+{ 
     
-    //hei på deg
-<<<<<<< HEAD
-    //håkon sin branch
-=======
-    //terst
->>>>>>> origin/Robin_brach
-    
+  public static void main(String[] args) 
+  {
+      Flight newflight = new Flight("#F846", "OSL",
+              "AES", 0, 23, 0, 23, 1, 1, 2017, 2, 1, 2017, 4500);
+        newflight.getFlightTime();
+    }
+
 }

@@ -4,7 +4,7 @@ package flightregisterapp;
  * The Passenger class represents a passenger in a flight reservation system. It
  * holds the passenger details relevant in our context.
  *
- * @author Håkon I. L. Haram
+ * @author Håkon Haram, Robin Thorholm, Bjørnar Tenfjord, Erlend Knudsen
  * @version 1.0 (14.02.2017)
  */
 public class Passenger
