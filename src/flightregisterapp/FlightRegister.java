@@ -44,7 +44,7 @@ public class FlightRegister
         {
             if (flight.getDestinationAirport().equals(destination))
             {
-                returnString += " " + flight.getFlightID();
+                returnString += flight.getFlightID() + " ";
             }
         }
         return returnString;
