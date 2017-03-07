@@ -1,6 +1,10 @@
 package Border;
 
 import flightregisterapp.Flight;
+import flightregisterapp.Passenger;
+import flightregisterapp.FlightRegister;
+import flightregisterapp.Seat;
+import flightregisterapp.Ticket;
 import java.util.Scanner;
 
 /**
@@ -12,6 +16,13 @@ import java.util.Scanner;
 public class Application
 {
 
+    private FlightRegister flights;
+
+    public Application()
+    {
+        flights = new FlightRegister();
+    }
+
     public void init()
     {
         System.out.println("init() was called");
@@ -19,7 +30,7 @@ public class Application
 
     void doCreateFlight()
     {
-        System.out.println("---- Create a flight ----");
+        System.out.println("---- Create a Flight ----");
         System.out.println("Please enter the flight ID (e.g. SK4145):");
         Scanner reader = new Scanner(System.in);
         String flightID = reader.nextLine();
@@ -50,7 +61,7 @@ public class Application
 
         System.out.println("\nPlease enter the departure year:");
         int departureYear = reader.nextInt();
-        
+
         System.out.println("\nPlease enter the arrival day (1-31):");
         int arrivalDay = reader.nextInt();
 
@@ -59,31 +70,68 @@ public class Application
 
         System.out.println("\nPlease enter the arrival year:");
         int arrivalYear = reader.nextInt();
-        
-        System.out.println("\nPlease enter the flight price:");
-        int price = reader.nextInt();
-        
-        
-        
-        
 
         Flight newFlight = new Flight(flightID, destinationAirport,
                 departureAirport, departureHour, departureMinute,
                 arrivalHour, arrivalMinute, departureDay,
                 departureMonth, departureYear, arrivalDay,
-                arrivalMonth, arrivalYear, price);
-        flights.add(newFlight, newFlight);
-        
+                arrivalMonth, arrivalYear);
+        flights.addFlight(flightID, newFlight);
+        flights.listAllFlights();
+
     }
 
     void doRegisterPassenger()
     {
-        System.out.println("doRegisterPassenger() was called");
+        System.out.println("\n---- Register a Passenger ----");
+        System.out.println("Please enter the forename:");
+        Scanner reader = new Scanner(System.in);
+        String firstName = reader.nextLine();
+
+        System.out.println("Please enter the surname:");
+        String lastName = reader.nextLine();
+
+        System.out.println("Please enter the email address:");
+        String eMail = reader.nextLine();
+
+        Passenger newPassenger = new Passenger(firstName, lastName, eMail);
+        System.out.println(firstName + " " + lastName + " " + eMail);
+        //passengers.addPassenger(lastName, newPassenger);
     }
 
     void doSellTicket()
     {
-        System.out.println("doSellTicket() was called");
+        System.out.println("\n---- Sell Ticket to Passenger ----");
+        System.out.println("Please enter the name of the passenger:");
+        Scanner reader = new Scanner(System.in);
+        String passenger = reader.nextLine();
+        
+        System.out.println("Please choose a destination (e.g. OSL):");
+        //TODO: List all available destinations
+        String destination = reader.nextLine();
+
+        System.out.println("Please choose a flight:");
+        flights.listFlightsByDestination(destination);
+        String flightID = reader.nextLine();
+        String flight = (flights.getFlightByID(flightID).getDepartureAirport()
+                + "->" + destination);
+
+        System.out.println("Please choose a seat:");
+        flights.getFlightByID(flightID).listAvailableSeats();
+        String seat = reader.nextLine();
+        //flights.getFlightByID(flightID).setSeatUnavailable();
+
+        System.out.println("Please enter a valid ticket ID (e.g. 1001):");
+        int ticketID = reader.nextInt();
+
+        System.out.println("Please enter the ticket price:");
+        int price = reader.nextInt();
+
+        Ticket newTicket = new Ticket(passenger, flight,
+                seat, flightID, ticketID, price);
+        //tickets.addTicket(
+        System.out.println("Ticket:\n" + passenger + " " + flight + " "
+        + seat + " " + flightID + " " + ticketID + " " + price);
     }
 
     void doListSeatsInFlight()

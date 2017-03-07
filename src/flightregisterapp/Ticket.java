@@ -13,13 +13,14 @@ public class Ticket
 {
 
     private int ticketID;
-    private Seat seat;
-    private Passenger passenger;
-    private Flight flight;
+    private String seat;
+    private String passenger;
+    private String flight;
     private String flightID;
     private int price;
 
-    public Ticket(Passenger passenger, Flight flight, Seat seat)
+    public Ticket(String passenger, String flight, String seat, String flightID,
+            int ticketID, int price)
     {
         this.passenger = passenger;
         this.flight = flight;
