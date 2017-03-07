@@ -7,15 +7,9 @@ package flightregisterapp;
 
 /**
  *
- * @author rocio
+ * @author Håkon
  */
-public class FlightRegisterAppMain {
-    
-    //hei på deg
-<<<<<<< HEAD
-    //håkon sin branch
-=======
-    //terst
->>>>>>> origin/Robin_brach
+public class TicketRegister
+{
     
 }
