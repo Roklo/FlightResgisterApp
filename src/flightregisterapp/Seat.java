@@ -6,7 +6,7 @@ package flightregisterapp;
  * and if the seat is available (status). You also have the possibility to
  * change the status of the seat.
  *
- * @author Håkon Haram, Robin Thorholm, Bjørnar Tenfjord, Erlend Knudsen
+ * @author Håkon Haram, Robin Thorholm, Bjørnar Tennfjord, Erlend Knudsen
  * @version 1.0 (14.02.2017)
  */
 public class Seat

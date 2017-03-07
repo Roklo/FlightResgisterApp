@@ -7,7 +7,7 @@ package flightregisterapp;
 
 /**
  *
- * @author Håkon
+ *
  */
 public class Ticket
 {

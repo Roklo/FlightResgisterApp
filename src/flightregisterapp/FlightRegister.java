@@ -12,4 +12,9 @@ package flightregisterapp;
 public class FlightRegister
 {
     
+    public FlightRegister()
+    {
+        
+    }
+
 }
