@@ -4,7 +4,6 @@ package flightregisterapp;
  * The flight class represents a flight in a flight reservation system. It holds
  * the details about the flight such as flightID, destinationAirport,
  * departureAirport, departureTime, departureDate, arrivalTime and arrivalDate
- *bjørnar
  * 
  * @author Håkon Haram, Robin Thorholm, Bjørnar Tennfjord, Erlend Knudsen
  * @version 2.0 (07.03.2017)

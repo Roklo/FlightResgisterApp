@@ -72,7 +72,7 @@ public class Application
                 arrivalHour, arrivalMinute, departureDay,
                 departureMonth, departureYear, arrivalDay,
                 arrivalMonth, arrivalYear, price);
-        //flights.add(newFlight);
+        flights.add(newFlight, newFlight);
         
     }
 
